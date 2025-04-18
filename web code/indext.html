@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allez Food - Pengantaran Makanan</title>
+	<link rel="stylesheet" href="cloud.css"> 
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo Allez Food">
+    <h1>Allez Food</h1>
+    <p>Pesan Makanan Favorit Anda Sekarang!</p>
+</header>
+
+<div class="container">
+    <h2>Pilih Makanan Anda</h2>
+    
+    <div class="food-item">
+        <img src="pizza.png" alt="Pizza">
+        <div class="food-details">
+            <div class="food-name">Pizza</div>
+            <div class="food-price">Rp 50.000</div>
+        </div>
+        <button type="button" onclick="selectFood('Pizza', 50000)">Pilih</button>
+    </div>
+    
+    <div class="food-item">
+        <img src="burger.png" alt="Burger">
+        <div class="food-details">
+            <div class="food-name">Burger</div>
+            <div class="food-price">Rp 30.000</div>
+        </div>
+        <button type="button" onclick="selectFood('Burger', 30000)">Pilih</button>
+    </div>
+
+    <div class="food-item">
+        <img src="sushi.png" alt="Sushi">
+        <div class="food-details">
+            <div class="food-name">Sushi</div>
+            <div class="food-price">Rp 70.000</div>
+        </div>
+        <button type="button" onclick="selectFood('Sushi', 70000)">Pilih</button>
+    </div>
+	
+    <div class="food-item">
+        <img src="bakso.png" alt="Bakso">
+        <div class="food-details">
+            <div class="food-name">Bakso</div>
+            <div class="food-price">Rp 10.000</div>
+        </div>
+        <button type="button" onclick="selectFood('Bakso', 30000)">Pilih</button>
+    </div>
+	
+	 <div class="food-item">
+        <img src="sate ayam.png" alt="sate ayam">
+        <div class="food-details">
+            <div class="food-name">Sate ayam</div>
+            <div class="food-price">Rp 30.000</div>
+        </div>
+        <button type="button" onclick="selectFood('sate ayam', 30000)">Pilih</button>
+    </div>
+	 <div class="food-item">
+        <img src="ayam goreng.png" alt="ayam goreng">
+        <div class="food-details">
+            <div class="food-name">ayam goreng</div>
+            <div class="food-price">Rp 34.000</div>
+        </div>
+        <button type="button" onclick="selectFood('ayam goreng', 34000)">Pilih</button>
+    </div>
+	
+	 <div class="food-item">
+        <img src="martabak.png" alt="martabak">
+        <div class="food-details">
+            <div class="food-name">martabak</div>
+            <div class="food-price">Rp 54.000</div>
+        </div>
+        <button type="button" onclick="selectFood('martabak', 54000)">Pilih</button>
+    </div>
+	
+<div class="container">
+    <h2>Pilih Minuman Anda</h2>
+
+	 <div class="drink-item">
+        <img src="chat time.png" alt="chat time">
+        <div class="drink-details">
+            <div class="drink-name">chat time</div>
+            <div class="drink-price">Rp 24.000</div>
+        </div>
+        <button type="button" onclick="selectFood('chat time', 24000)">Pilih</button>
+    </div>
+	
+	 <div class="drink-item">
+        <img src="mixue.png" alt="mixue">
+        <div class="drink-details">
+            <div class="drink-name">mixue</div>
+            <div class="drink-price">Rp 15.000</div>
+        </div>
+        <button type="button" onclick="selectFood('mixue', 15000)">Pilih</button>
+    </div>
+	
+	 <div class="drink-item">
+        <img src="starbucks.png" alt="Starbucks matcha edition">
+        <div class="drink-details">
+            <div class="drink-name">Starbucks matcha edition</div>
+            <div class="drink-price">Rp 65.000</div>
+        </div>
+        <button type="button" onclick="selectFood('Starbucks matcha edition', 65000)">Pilih</button>
+    </div>
+	
+	
+	</div>
+
+    <h3>Driver Terdekat</h3>
+    <div id="driver-list">
+        <div class="driver-item">
+            <img src="lebah ganteng.png" alt="najlur">
+            <div class="driver-details">
+                <div class="driver-name">najlur</div>
+                <div class="driver-distance">Jarak: 2 km</div>
+            </div>
+        </div>
+        <div class="driver-item">
+            <img src="gerry asomething.png" alt="wiwo">
+            <div class="driver-details">
+                <div class="driver-name">wiwo</div>
+                <div class="driver-distance">Jarak: 3 km</div>
+            </div>
+        </div>
+        <div class="driver-item">
+            <img src="rangga hengkerTZY.png" alt="rangtzy">
+            <div class="driver-details">
+                <div class="driver-name">rangtzy</div>
+                <div class="driver-distance">Jarak: 1.5 km</div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Putar Musik</h3>
+    <div class="music-player">
+        <audio id="audio" controls>
+            <source src="rimek.mp3" type="audio/mpeg"> 
+			
+        </audio>
+        <div class="music-animation">
+            <div class="music-wave"></div>
+            <div class="music-wave"></div>
+            <div class="music-wave"></div>
+            <div class="music-wave"></div>
+        </div>
+    </div>
+	
+
+    <h3>Ulasan Makanan</h3>
+    <div class="review-section">
+        <div class="review-item">
+            <h4>Brando</h4>
+            <p>Pizza-nya sangat enak! Rasa keju yang lezat.</p>
+        </div>
+		
+        <div class="review-item">
+            <h4>Bang upi</h4>
+            <p>Burger-nya sangat juicy dan mengenyangkan.</p>
+        </div>
+		
+		<div class="review-item">
+            <h4>miauaug</h4>
+            <p>wuenak puolllllll.</p>
+        </div>
+    </div>
+
+    <h3>Keranjang Belanja</h3>
+    <div id="cart" class="distance-info">
+        <h4>Keranjang Anda</h4>
+        <p id="cart-items">Tidak ada item di keranjang.</p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <h3>Countdown Timer</h3>
+    <div class="countdown" id="countdown-timer">Diskon berakhir dalam: <span id="timer"></span></div>
+</div>
+
+<script>
+    let cart = [];
+
+    function selectFood(name, price) {
+        cart.push({ name, price });
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartItems = document.getElementById('cart-items');
+        if (cart.length === 0) {
+            cartItems.innerHTML = 'Tidak ada item di keranjang.';
+        } else {
+            cartItems.innerHTML = cart.map(item => `${item.name} - Rp ${item.price}`).join('<br>');
+            document.getElementById('cart').style.display = 'block';
+        }
+    }
+
+    function checkout() {
+        alert('Terima kasih telah memesan! Total: Rp ' + cart.reduce((total, item) => total + item.price, 0));
+        cart = [];
+        updateCart();
+    }
+
+    // Countdown Timer
+    const countdownDate = new Date().getTime() + 3600000; // 1 jam dari sekarang
+    const timerElement = document.getElementById('timer');
+
+    const countdownFunction = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `${hours} jam ${minutes} menit ${seconds} detik`;
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            timerElement.innerHTML = "Diskon telah berakhir!";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
